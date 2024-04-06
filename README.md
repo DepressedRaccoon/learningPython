@@ -23,5 +23,5 @@ shown.
     - If the number is greater than zero, the square root of the number with exactly 3 digits after the decimal point.
 
 ### Projects
-- Project 1: yYu will build a system to allow a user to determine the price for a service/item. Your program should allow the user to choose options for three different categories.  Based on the user choices, your program should calculate the total cost of the product/service and display the total cost of the product, including a breakdown of the choices selected.
+- Project 1: You will build a system to allow a user to determine the price for a service/item. Your program should allow the user to choose options for three different categories.  Based on the user choices, your program should calculate the total cost of the product/service and display the total cost of the product, including a breakdown of the choices selected.
 
