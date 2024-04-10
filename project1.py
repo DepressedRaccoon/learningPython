@@ -122,14 +122,14 @@ def main():
     print("Welcome to Wayne's Computer Builder. Let's get started!")
 
     while True:
-        computerType = input("What type of computer would you like to build, a laptop or desktop? ").lower()
+        computerType = input("Did you want to build a desktop? Yes/no? ").lower()
 
-        if computerType == "desktop":
+        if computerType == "yes":
             buildDesktop()
             break
-        ## elif computerType == "laptop":
-        ##     buildLaptop()
-        ##     break
+        elif computerType == "no":
+            print("My apologies, run this program again when ready!")
+            break
         else:
             print("I'm sorry, that is not a valid computer type, try again!")
 
