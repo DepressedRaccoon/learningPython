@@ -2,10 +2,29 @@
 
 
 ## Create Function to find idex of items
-def FindItem(1st, item)
+def FindItem(lst, item):
     try: 
-    index = lst.index(item)
+        index = lst.index(item)
         return index
+    except ValueError:
+        return -1
+
+## Display information for single item
+def DisplayInformation(keyList, dataList, index):
+    if index != -1: 
+        print(f"Item: {keyList[index]}")
+        print("Data:")
+        for i in range(len(dataList[index])):
+            print(f"{dataList[index][i]}")
+    else:
+        print("Invalid index value")
+
+## Display all information 
+def DisplayAllInformation(keyList, dataList): 
+    print("All info: ")
+    print("Item\t\tData")
+    for i in range(len(keyList)):
+        print(f"{keyList[i]}\t\t{dataList[i]}")
 
 ## Create menu function to display menu
 def Menu(): 
