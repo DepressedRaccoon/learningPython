@@ -1,6 +1,11 @@
 ## Welcome to Project 2! This is the first commit! 
 
 
+## Create Function to find idex of items
+def FindItem(1st, item)
+    try: 
+    index = lst.index(item)
+        return index
 
 ## Create menu function to display menu
 def Menu(): 
