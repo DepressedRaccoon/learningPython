@@ -1,5 +1,15 @@
 ## Welcome to Project 2! This is the first commit! 
 
+
+
+## Create menu function to display menu
+def Menu(): 
+    print("Menu:")
+    print("1. Display information for a single item")
+    print("2. Display all information for each item")
+    print("3. Compare two items")
+    print("4. Exit")
+
 ## Create a main function / Basic template
 def Main(): 
 
