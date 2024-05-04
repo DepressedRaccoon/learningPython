@@ -1,6 +1,5 @@
 ## Welcome to Project 2! This is the first commit! 
 
-
 ## Create Function to find idex of items
 def FindItem(lst, item):
     try: 
@@ -34,6 +33,17 @@ def ValidateIndex(lst, index):
     else: 
         return False
 
+## Compare Two Items
+def CompareTwoItems(keyList, dataList, index1, index2): 
+    if index1 != -1 and index2 != -1:
+        print(f"Comparing {keyList[index1]} and {keyList[index2]}:")
+        print("1. Data for item 1")
+        print(dataList[index1])
+        print("2. Data for item 2")
+        print(dataList[index2])
+    else:
+        print("Invalid index value for one or both items")
+
 ## Create menu function to display menu
 def Menu(): 
     print("Menu:")
@@ -57,7 +67,7 @@ def Main():
         if choice == '1': 
             item = input("Enter the item to display: ")
             index = FindItem(keyList, item)
-            DisplayInformation(keyLIst, dataLIst, index)
+            DisplayInformation(keyList, dataList, index)
         elif choice == '2': 
             DisplayAllInformation(keyList, dataList)
         elif choice == '3':
@@ -73,4 +83,4 @@ def Main():
             print("Invalid choice")
 
 ## Call Main
-    Main()
+Main()
