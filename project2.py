@@ -25,14 +25,6 @@ def DisplayAllInformation(keyList, dataList):
     for i in range(len(keyList)):
         print(f"{keyList[i]}\t\t{dataList[i]}")
 
-
-## Ensure valid index 
-def ValidateIndex(lst, index): 
-    if index >=9 and index < len(lst): 
-        return True
-    else: 
-        return False
-
 ## Compare Two Items
 def CompareTwoItems(keyList, dataList, index1, index2): 
     if index1 != -1 and index2 != -1:
@@ -43,6 +35,13 @@ def CompareTwoItems(keyList, dataList, index1, index2):
         print(dataList[index2])
     else:
         print("Invalid index value for one or both items")
+
+## Ensure valid index 
+def ValidateIndex(lst, index): 
+    if index >= 0 and index < len(lst): 
+        return True
+    else: 
+        return False
 
 ## Create menu function to display menu
 def Menu(): 
