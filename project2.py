@@ -56,7 +56,7 @@ def Main():
 
     ## List creation
     keyList = ["Something", "Something1", "Something2", "Something3", "Something4", "Something5"]
-    dataList = [[1,2,3], [3,5,6], [7,8,9], [10,11,12], [13,14,15]]
+    dataList = [[1,2,3], [3,5,6], [7,8,9], [10,11,12], [13,14,15], [16,17,18]]
 
     while True: 
         ## Call Rubric menu function
