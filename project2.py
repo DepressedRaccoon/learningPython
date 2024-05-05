@@ -55,23 +55,24 @@ def Menu():
 def Main(): 
 
     ## List creation
-    keyList = ["fireball", "bindingice", "fly", "antagonize", "powerwordkill", "soulcage"]
-    dataList = [["School: Evocation","Level: 3rd","Damage Type: Fire"], ["School: Evocation","Level: 2nd","Damage Type: Cold"], ["School: Transmutation","Level: 3rd","Damage Type: None"], ["School: Enchantment","Level: 3rd","Damage Type: Psychic"], ["School: Enchantment", "Level: 9th", "Damage Type: Yes"], ["School: Necromancy", "Level: 6th", "Damage Type: None"]]
+    keyList = ["fireball", "bindingice", "fly", "antagonize", "powerwordkill", "soulcage", "primalsavagery", "sunbeam", "magehand", "spiritguardians", "spiritualweapon"]
+    dataList = [["School: Evocation","Level: 3rd","Damage Type: Fire"], ["School: Evocation","Level: 2nd","Damage Type: Cold"], ["School: Transmutation","Level: 3rd","Damage Type: None"], ["School: Enchantment","Level: 3rd","Damage Type: Psychic"], ["School: Enchantment", "Level: 9th", "Damage Type: Yes"], ["School: Necromancy", "Level: 6th", "Damage Type: None"], ["School: Transmuatation", "Level: Cantrip", "Damage Type; Acid"], ["School: Evocation", "Level: 6th", "Damage Type: Radiant"], ["School: Evocation", "Level: Cantrip", "Damage Type: None"], ["School: Evocation", "Level: 3rd", "Damage Type: Radiant or Necrotic"], ["School: Evocation", "Level: 2nd", "Damage Type: Force"]]
 
     while True: 
         ## Call Rubric menu function
         Menu()
-        choice = input("Enter your Spell choice: ").lower().replace(" ", "")
+        choice = input("Enter your choice: ").lower().replace(" ", "")
+        print(keyList)
 
         if choice == '1': 
-            item = input("Enter the spell to display: ").lower().replace(" ", "")
+            item = input("Enter the Spell to display: ").lower().replace(" ", "")
             index = FindItem(keyList, item)
             DisplayInformation(keyList, dataList, index)
         elif choice == '2': 
             DisplayAllInformation(keyList, dataList)
         elif choice == '3':
-            item1 = input("Enter the first spell: ").lower().replace(" ", "")
-            item2 = input("Enter the second spell: ").lower().replace(" ", "")
+            item1 = input("Enter the first Spell: ").lower().replace(" ", "")
+            item2 = input("Enter the second Spell: ").lower().replace(" ", "")
             index1 = FindItem(keyList, item1)
             index2 = FindItem(keyList, item2)
             CompareTwoItems(keyList, dataList, index1, index2)
