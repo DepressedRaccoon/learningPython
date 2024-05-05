@@ -62,7 +62,7 @@ def Main():
         ## Call Rubric menu function
         Menu()
         choice = input("Enter your choice: ").lower().replace(" ", "")
-        print(keyList)
+        print("Choices: Fireball, Binding Ice, Fly, Antagonize, Power Word Kill, Soul Cage, Primal Savagery, Sunbeam, Mage Hand, Spirit Guardians, Spiritual Weapon")
 
         if choice == '1': 
             item = input("Enter the Spell to display: ").lower().replace(" ", "")
